@@ -1,0 +1,29 @@
+{
+  "name": "kirimi",
+  "version": "0.0.1",
+  "description": "Official Kirimi Whatsapp Bot library for Node Js ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yolkmonday/kirimi.git"
+  },
+  "keywords": [
+    "kirimi",
+    "bot whatsapp",
+    "whatsapp api"
+  ],
+  "author": "yolkmonday <yolkmonday@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yolkmonday/kirimi/issues"
+  },
+  "homepage": "https://github.com/yolkmonday/kirimi#readme",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
+  }
+}
