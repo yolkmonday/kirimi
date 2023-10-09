@@ -1,83 +1,47 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/aripadrian/apigames/badge)](https://www.codefactor.io/repository/github/aripadrian/apigames)
-[![Npm package monthly downloads](https://badgen.net/npm/dm/apigames)](https://npmjs.ccom/package/apigames)
+[![CodeFactor](https://www.codefactor.io/repository/github/yolkmonday/kirimi/badge)](https://www.codefactor.io/repository/github/yolkmonday/kirimi)
+[![Npm package monthly downloads](https://badgen.net/npm/dm/kirimi)](https://npmjs.ccom/package/kirimi)
 
-# Apigames Client for Node Js
+# kirimi Client for Node Js
 
-This library is the abstraction of Apigames API for access from applications written with server-side Javascript.
+This library is the abstraction of kirimi API for access from applications written with server-side Javascript.
 
-[![NPM](https://nodei.co/npm/apigames.png)](https://nodei.co/npm/apigames/)
+[![NPM](https://nodei.co/npm/kirimi.png)](https://nodei.co/npm/kirimi/)
 
 
 
 ## Instalasi
 
 ```bash
-npm install apigames
+npm install kirimi
 ```
 
 atau
 
 ```bash
-yarn add apigames
+yarn add kirimi
 ```
 
 ## Pemakaian
-Dapatkan Merchant ID dan Secret Key Anda di [Apigames Dashboard](https://member.apigames.id/pengaturan/secret-key).
+Dapatkan User Code dan Secret Key Anda di [Kirimi Dashboard](https://console.kirimi.id/docs).
 
 ```js
-const Apigames = require('apigames');
-const client = new Apigames("YOUR MERCHANT ID","YOUR SECRET");
+const kirimi = require('kirimi');
+const client = new kirimi("YOUR USER CODE","YOUR SECRET");
 ```
 
 
-### Cek Saldo
+### Kirim Pesan
 ```js
-let saldo = await client.cekSaldo();
-```
-
-### Cek Akun Game
-```js
-let saldo = await client.cekAkunGame(gameCode, userId);
-```
-
-> Game yang tersedia : mobilelegend , freefire, higgs
-
-### Cek Status Koneksi
-```js
-Coming Soon
-```
-
-### Transaksi
-
-```js
-let transaksi = await client.transaksi(productCode, tujuan, refId);
-```
-
-> Note:
-> RefID adalah kode transaksi unik kamu yang di generate secara acak
-
-### Cek Status Transaksi
-```js
-Coming Soon
-```
-
-### Radeem Kiosgamer Garena Shell Bulk
-```js
-Coming Soon
-```
-
-### Cek Status Radeem Kiosgamer Garena Shell Bulk
-```js
-Coming Soon
+let sendMessage = await client.sendMessage('device_id','receiver','message');
 ```
 
 ### License
 
-[MIT](https://github.com/aripadrian/apigames/blob/master/LICENSE)
+[MIT](https://github.com/yolkmonday/kirimi/blob/master/LICENSE)
 
 ### Author
 
-[Ari Padrian](mailto:aripadrian@gmail.com)
+[Ari Padrian](mailto:yolkmonday@gmail.com)
 
 
 

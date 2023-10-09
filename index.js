@@ -12,12 +12,6 @@ class Kirimi {
     this._endpoint = "https://api.kirimi.id"
   }
 
-
-  /**
-   * @param {string} productCode - Kode Produk
-   * @param {string} tujuan - Tujuan Pengisian
-   * @param {string} refId - Ref ID Unik Anda
-   **/
   sendMessage(deviceId, to, message) {
     const options = {
       method: 'POST',
@@ -27,13 +21,14 @@ class Kirimi {
         "device_id": deviceId,
         "receiver": to,
         "message": message,
-        "secret": this._user_code
+        "secret": this._secret
 },
       json: true,
     };
 
     return rp(options)
       .then(function (resp) {
+        console.log(resp)
         if (resp.data) {
           return resp.data;
         }
@@ -44,4 +39,4 @@ class Kirimi {
   }
 }
 
-module.exports = Apigames;
+module.exports = Kirimi;
