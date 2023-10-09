@@ -1,5 +1,5 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/yolkmonday/kirimi/badge)](https://www.codefactor.io/repository/github/yolkmonday/kirimi)
-[![Npm package monthly downloads](https://badgen.net/npm/dm/kirimi)](https://npmjs.ccom/package/kirimi)
+[![Npm package monthly downloads](https://badgen.net/npm/dm/kirimi)](https://npmjs.com/package/kirimi)
 
 # kirimi Client for Node Js
 
